@@ -48,4 +48,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- My custom keymaps
+vim.keymap.set('i', '<C-c>', '<Esc>')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', ';', ':')
+
 -- vim: ts=2 sts=2 sw=2 et

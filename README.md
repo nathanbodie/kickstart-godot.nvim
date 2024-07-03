@@ -232,3 +232,8 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+# How to Set Up with Godot
+
+Enable "Use External Editor" in text editor settings and use the following exec path and flags:
+Exec path: `nvim`
+Exec flags: `--server /tmp/godot.pipe --remote-send "<esc>:n {file}<CR>:call cursor({line},{col})<CR>"`
