@@ -17,6 +17,7 @@ Exec flags: --server /tmp/godot.pipe --remote-send "<esc>:n {file}<CR>:call curs
 ```
 
 <details><summary>info about kickstart.nvim</summary>
+
 ## Introduction
 
 *This is a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi file configuration.*
