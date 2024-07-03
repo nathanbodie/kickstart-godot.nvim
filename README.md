@@ -11,6 +11,8 @@ git clone https://github.com/nathanbodie/kickstart-godot.nvim ~/.config/nvim
 ```
 Enable "Use External Editor" in text editor settings and use the following exec path and flags: 
 
+![External editor is checked](externaleditor.png)
+
 ```
 Exec path: nvim 
 Exec flags: --server /tmp/godot.pipe --remote-send "<esc>:n {file}<CR>:call cursor({line},{col})<CR>"
