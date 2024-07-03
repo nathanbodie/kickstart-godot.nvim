@@ -1,5 +1,22 @@
-# kickstart-modular.nvim
+# kickstart-godot.nvim
 
+My fork of kickstart.nvim with Godot plugins and DAP support configured.
+
+# Installation
+
+Use this command to copy the config. Be sure to back up any current Neovim configs beforehand.
+
+```
+git clone https://github.com/nathanbodie/kickstart-godot.nvim ~/.config/nvim
+```
+Enable "Use External Editor" in text editor settings and use the following exec path and flags: 
+
+```
+Exec path: nvim 
+Exec flags: --server /tmp/godot.pipe --remote-send "<esc>:n {file}<CR>:call cursor({line},{col})<CR>"
+```
+
+<details><summary>info about kickstart.nvim</summary>
 ## Introduction
 
 *This is a fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi file configuration.*
@@ -232,8 +249,4 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
-# How to Set Up with Godot
-
-Enable "Use External Editor" in text editor settings and use the following exec path and flags:
-Exec path: `nvim`
-Exec flags: `--server /tmp/godot.pipe --remote-send "<esc>:n {file}<CR>:call cursor({line},{col})<CR>"`
+</details>
