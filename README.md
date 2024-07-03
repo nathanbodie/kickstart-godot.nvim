@@ -1,6 +1,6 @@
 # kickstart-godot.nvim
 
-My fork of kickstart.nvim with Godot plugins and DAP support configured.
+A fork of kickstart.nvim modular with Godot plugins and DAP support configured.
 
 # Installation
 
